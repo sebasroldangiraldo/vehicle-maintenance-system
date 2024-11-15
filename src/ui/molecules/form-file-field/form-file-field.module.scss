@@ -1,0 +1,34 @@
+@import '../../../styles/variables.scss';
+
+.fieldContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+    .label {
+        font-weight: 300;
+        font-size: 0.9rem;
+        font-family: var(--fontprincipal);
+    }
+
+    .input {
+        width: 100%;
+        padding: 0.6rem;
+        border: 0.075rem solid $light-gray-color;
+        background-color: $white-color;
+        border-radius: 0.4rem;
+        font-family: var(--fontprincipal);
+        font-weight: 300;
+    }
+
+    .error {
+        font-size: 0.75rem;
+        font-weight: 300;
+        color: red;
+    }
+
+    .inputError {
+        border: 0.075rem solid red;
+    }
+}

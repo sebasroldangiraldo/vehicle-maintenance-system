@@ -1,0 +1,33 @@
+@import '../../../styles/variables.scss';
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+
+    .text {
+        font-weight: 300;
+        font-size: 0.85rem;
+    }
+
+    .button {
+        color: $black-color;
+        border: none;
+        display: flex;
+        cursor: pointer;
+        background-color: transparent;
+
+        &:active {
+            transform: scale(0.95);
+        }
+
+        &:disabled {
+            color: $black-color; 
+            opacity: 0.5; 
+            pointer-events: none; 
+            
+        }
+    }
+}

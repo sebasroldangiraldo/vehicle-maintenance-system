@@ -1,0 +1,25 @@
+@import '../../../styles/variables.scss';
+
+.layout {
+    display: flex;
+    height: 100vh;
+
+    .aside {
+        background-color: $gray-backgound-color;
+        width: 15%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        z-index: 1000; 
+    }
+
+    .container {
+        background-color: $gray-backgound-color;
+        margin-left: 15%; 
+        width: calc(100% - 15%); 
+        overflow-y: auto; 
+    }
+}

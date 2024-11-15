@@ -1,0 +1,49 @@
+@import '../../../styles/variables.scss';
+
+@import "../../../styles/variables.scss";
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    .container {
+        background: $white-color;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        width: 30%; 
+        position: relative;
+
+        .button {
+            position: absolute;
+            top: 0.75rem;
+            right: 0.75rem;
+            border: none;
+            background: transparent;
+            color: $black-color;
+            cursor: pointer;
+
+            &:active {
+                transform: scale(0.95);
+            }
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            .title {
+                color: $black-color;
+                text-align: center;
+            }
+        }
+    }
+}

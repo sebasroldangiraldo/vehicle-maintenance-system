@@ -1,0 +1,52 @@
+@import '../../../styles/variables.scss';
+
+.loginForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 0.075rem solid $light-gray-color;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    background-color: $white-color;
+
+    .header {
+        text-align: center;
+        color: $purple-color;
+
+        .title {
+            color: $purple-color;
+        }
+
+        .text {
+            color: $black-color;
+            font-weight: 300;
+            font-size: 0.9rem;
+        }
+    }
+
+    .button {
+        padding: 0.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        border: none;
+        font-family: var(--fontprincipal);
+        font-weight: bold;
+        color: $white-color;
+        background-color: $purple-color;
+        border-radius: 0.4rem;
+        cursor: pointer;
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+
+    .redirect {
+        text-align: center;
+        font-size: 0.9rem;
+        font-weight: 300;
+    }
+}

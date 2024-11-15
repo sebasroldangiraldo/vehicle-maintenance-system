@@ -1,0 +1,27 @@
+@import '../../../styles/variables.scss';
+
+.inputContainer {
+    width: 100%;
+    display: flex;
+    gap: 0.25rem;
+    flex-direction: column;
+
+    .input {
+        width: 100%;
+        padding: 0.6rem;
+        border: 0.075rem solid $light-gray-color;
+        border-radius: 0.4rem;
+        font-family: var(--fontprincipal);
+        font-weight: 300;
+    }
+
+    .error {
+        font-size: 0.75rem;
+        font-weight: 300;
+        color: red;
+    }
+
+    .inputError {
+        border: 0.075rem solid red;
+    }
+}

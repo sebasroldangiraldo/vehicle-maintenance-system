@@ -1,0 +1,68 @@
+@import '../../../styles/variables.scss';
+
+.tableContainer {
+    width: 100%;
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: $white-color;
+
+        .thead {
+            color: $black-color;
+            border-bottom: 0.1rem solid $light-gray-color;
+            font-size: 0.85rem; 
+
+            th {
+                padding: 0.5rem;
+            }
+        }
+
+        .tbody {
+            text-align: center;
+
+            tr {
+                border-bottom: 0.05rem solid $light-gray-color;
+                
+                td {
+                    font-size: 0.85rem;
+                    font-weight: 300;
+                    padding: 0.35rem;
+                }
+
+                .imageContainer {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .image {
+                        width: 5rem;
+                        height: 3rem;
+                    }
+                }
+
+                .actions {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.75rem;
+
+                    .button {
+                        color: rgb(154, 154, 154);
+                        border: none;
+                        background: transparent;
+                        cursor: pointer;
+
+                        &:active {
+                            transform: scale(0.95);
+                        }
+
+                        &:hover {
+                            color: gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
